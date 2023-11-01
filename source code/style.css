@@ -1,0 +1,124 @@
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    color: whitesmoke;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+}
+nav ul li {
+    margin:auto 0 auto 0;
+    padding:3px 10px 0 30px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.logo img{
+    height: 40px;
+}
+
+.bottom{
+    background-color: black;
+    color: white;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0;
+    height: 75px;
+    border-radius: 40px;
+    
+}
+.bottom #bar{
+    width: 85vw;
+    margin-top: 5px ;
+}
+.container{
+    min-height: 80vh;
+    background-color: black;
+    color: white;
+    margin: 10px auto;
+    padding: 20px;
+    width: 90%;
+    font-family: 'Varela Round', sans-serif;
+    border-radius: 15px;
+    background-image: url(/Spotify/resources/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: sticky;
+
+}
+.con1 h1{
+    margin-bottom: 10px;
+}
+.icons i {
+    margin-top: 2px;
+}
+.songlist{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color: black;
+    background-color: #fff;
+    width: 500px;
+    margin: 5px;
+    border-radius: 30px;
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.songlist img{
+    margin: auto 0 auto 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.songlistmain{
+    display: flex;
+    flex-direction: column;
+}
+
+.songlistplay i {
+    padding: 5px;
+    font-size:20px;
+    cursor: pointer;
+}
+.songinfo{
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    position: absolute;
+    left: 7vw;
+    padding-top: 15px;    
+
+}
+
+.songinfo div{
+    padding-left: 10px;
+    font-size:x-large;
+    font-weight: bold;
+}
+.gif{
+    opacity: 0;
+    transition:opacity 1s ease-in;
+}
