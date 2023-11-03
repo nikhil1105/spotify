@@ -63,7 +63,9 @@ nav ul li {
     background-image: url(/Spotify/resources/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    position: sticky;
+    transition-duration: 1s;
+    transition-property:background-image;
+
 
 }
 .con1 h1{
@@ -125,4 +127,26 @@ nav ul li {
     opacity: 0;
     transition:opacity 1s ease-in;
    
+}
+
+@media screen and (max-width: 1000px ) {
+    .container{
+        background-image: none ;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .container{
+        background-image: none ;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .songinfo{
+    display: none;
+    }
+
 }
