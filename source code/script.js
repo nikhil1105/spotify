@@ -80,7 +80,12 @@ playbutton.addEventListener("click", () => {
 
 
 bar.addEventListener("change", () => {
-    audelement.currentTime = (bar.value * audelement.duration / 100);
+    console.log(audelement.currentTime);
+    console.log(audelement.duration);
+    console.log(bar.value);
+    console.log(bar.value * audelement.duration / 100);
+    audelement.currentTime = parseInt(bar.value * audelement.duration / 100);
+    
 })
 
 

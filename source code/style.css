@@ -108,11 +108,13 @@ nav ul li {
 }
 .songinfo{
     display: flex;
+    bottom: 18px;
     justify-content: space-between;
     align-items:baseline;
     position: absolute;
     left: 7vw;
-    padding-top: 15px;    
+    padding-top: 0px;    
+ 
 
 }
 
@@ -148,5 +150,9 @@ nav ul li {
     .songinfo{
     display: none;
     }
+    .songlist{
+        width:auto;
+    }    
+
 
 }
