@@ -60,7 +60,7 @@ nav ul li {
     width: 90%;
     font-family: 'Varela Round', sans-serif;
     border-radius: 15px;
-    background-image: url(/Spotify/resources/bg.jpg);
+    background-image: url(/resources/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     transition-duration: 1s;
