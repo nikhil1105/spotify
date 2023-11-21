@@ -1,12 +1,12 @@
 let songs = [
-    { songname: "Believer", filepath: "/Spotify/resources/songs/1.mp3", coverpath: "/Spotify/resources/covers/1.jpg" },
-    { songname: "Thunder", filepath: "/Spotify/resources/songs/2.mp3", coverpath: "/Spotify/resources/covers/2.jpg" },
-    { songname: "Girls Like You", filepath: "/Spotify/resources/songs/3.mp3", coverpath: "/Spotify/resources/covers/3.jpg" },
-    { songname: "Shape of You", filepath: "/Spotify/resources/songs/4.mp3", coverpath: "/Spotify/resources/covers/4.jpg" },
-    { songname: "Perfect", filepath: "/Spotify/resources/songs/5.mp3", coverpath: "/Spotify/resources/covers/5.jpg" },
-    { songname: "Baby", filepath: "/Spotify/resources/songs/6.mp3", coverpath: "/Spotify/resources/covers/6.jpg" },
-    { songname: "Beautiful Mistakes", filepath: "/Spotify/resources/songs/7.mp3", coverpath: "/Spotify/resources/covers/7.jpg" },
-    { songname: "Memories", filepath: "/Spotify/resources/songs/8.mp3", coverpath: "/Spotify/resources/covers/8.jpg" }
+    { songname: "Believer", filepath: "./resources/songs/1.mp3", coverpath: "/resources/covers/1.jpg" },
+    { songname: "Thunder", filepath: "/resources/songs/2.mp3", coverpath: "/resources/covers/2.jpg" },
+    { songname: "Girls Like You", filepath: "/resources/songs/3.mp3", coverpath: "/resources/covers/3.jpg" },
+    { songname: "Shape of You", filepath: "/resources/songs/4.mp3", coverpath: "/resources/covers/4.jpg" },
+    { songname: "Perfect", filepath: "/resources/songs/5.mp3", coverpath: "/resources/covers/5.jpg" },
+    { songname: "Baby", filepath: "/resources/songs/6.mp3", coverpath: "/resources/covers/6.jpg" },
+    { songname: "Beautiful Mistakes", filepath: "/resources/songs/7.mp3", coverpath: "/resources/covers/7.jpg" },
+    { songname: "Memories", filepath: "/resources/songs/8.mp3", coverpath: "/resources/covers/8.jpg" }
 
 ]
 const slistmain = document.getElementById("songlistmain");
@@ -38,7 +38,7 @@ songs.forEach(element => {
     slistmain.appendChild(sl);
 });
 
-var audelement = new Audio("/Spotify/resources/songs/1.mp3");
+var audelement = new Audio("/resources/songs/1.mp3");
 const gif = document.getElementById("gif");
 const playbutton = document.getElementById("playbtn");
 const back = document.getElementById("back");
@@ -180,7 +180,7 @@ audelement.addEventListener('timeupdate', () => {
             songnumber++;
         }
         songnumber++;
-        audelement.src = "/Spotify/resources/songs/" + parseInt(songnumber) + ".mp3";
+        audelement.src = "/resources/songs/" + parseInt(songnumber) + ".mp3";
         audelement.currentTime = 0;
         audelement.play();
         gif.style.opacity = 1;
@@ -211,7 +211,7 @@ Array.from(document.getElementsByClassName('songitemplay')).forEach((element) =>
             element.classList.add("fa-circle-pause");
             playbutton.classList.remove("fa-circle-play");
             playbutton.classList.add("fa-circle-pause");
-            audelement.src = "/Spotify/resources/songs/" + parseInt(element.id) + ".mp3";
+            audelement.src = "/resources/songs/" + parseInt(element.id) + ".mp3";
             audelement.currentTime = 0;
             audelement.play();
             gif.style.opacity = 1;
